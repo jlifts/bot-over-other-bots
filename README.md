@@ -6,6 +6,7 @@ A Typescript bot that is for testing and practicing functions and capabilities o
 
 ### Resources
 [Discord Permission Calculator](https://discordapi.com/permissions.html)
+
 [Discord Developer Portal](https://discord.com/developers/docs)
 
 
