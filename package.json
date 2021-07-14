@@ -6,7 +6,8 @@
   "author": "Joshua Burgess",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node-dev --respawn --transpile-only --poll ./src/index.ts"
+    "start": "ts-node-dev --respawn --transpile-only --poll ./src/index.ts",
+    "build": "tsc --build"
   },
   "devDependencies": {
     "ts-node": "^9.1.1",

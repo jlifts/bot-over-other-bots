@@ -19,14 +19,14 @@ export const command: Command = {
       let categories = [];
 
       readdirSync('./src/Commands/').forEach((dir) => {
-        const commander = readdirSync(`./src/Commands/${dir}/`).filter((file) =>
-          file.endsWith('.ts')
+        const commandsList = readdirSync(`./src/Commands/${dir}/`).filter(
+          (file) => file.endsWith('.ts')
         );
         //Issue involves file names not populating
-        const cmds = commander.map((command) => {
+        const cmds = commandsList.map((command) => {
           let file = require(`../../Commands/${dir}/${command}`);
 
-          if (!file.name) return 'No command name.';
+          if (!file.name) return 'Hmmm... No command name.';
 
           let name = file.name.replace('.ts', '');
 
